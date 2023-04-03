@@ -29,3 +29,8 @@ cat <fileName>   // whatever things available in the file you can see through th
  git remote -v  // it will show all url that attach to the current folder
 
  git push origin main  // pushing the committed files into repository,  here main is branch name
+
+ //to make changes to somebody others repository, you have to fork it in your account, then clone 
+
+
+ git remote add upstream <githubUrl>  // upstream is the fork account url
