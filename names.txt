@@ -7,3 +7,6 @@ git init  // to initialize empty git repository i.e.  .git file
 //In linux/mac any file that starts with . is hidden for exa - .git
 touch names.txt   //cmd to create file  for exa- touch kadar.js
 git status   // you can check status of all files and folders like committed files, untracked files, staged 
+git add <fileName>    // you can commit individual file in git repository  // after modification also you can use same cmd to commit file
+git commit -m '<message>'  // commit cmd 
+cat <fileName>   // whatever things available in the file you can see through this 
