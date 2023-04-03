@@ -1,0 +1,9 @@
+mkdir <folderName>     // new folder created
+cd <folderName>      // folder changed to working folder
+cd..     // one folder back
+git clone // cloning repository in separate folder
+git checkout -b <branchName>   // creating new branch from main branch
+git init  // to initialize empty git repository i.e.  .git file
+//In linux/mac any file that starts with . is hidden for exa - .git
+touch names.txt   //cmd to create file  for exa- touch kadar.js
+git status   // you can check status of all files and folders like committed files, untracked files, staged 
