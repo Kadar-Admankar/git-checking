@@ -1,3 +1,5 @@
+//example of wedding where photo of guest is clicked with couple on stage and store in the album
+
 mkdir <folderName>     // new folder created
 cd <folderName>      // folder changed to working folder
 cd..     // one folder back
@@ -7,6 +9,23 @@ git init  // to initialize empty git repository i.e.  .git file
 //In linux/mac any file that starts with . is hidden for exa - .git
 touch names.txt   //cmd to create file  for exa- touch kadar.js
 git status   // you can check status of all files and folders like committed files, untracked files, staged 
-git add <fileName>    // you can commit individual file in git repository  // after modification also you can use same cmd to commit file
-git commit -m '<message>'  // commit cmd 
+git add <fileName>    // you can stage individual file in git repository  // after modification also you can use same cmd to commit file
+git commit -m '<message>'  // commit cmd after stage
 cat <fileName>   // whatever things available in the file you can see through this 
+
+ git restore --staged <fileName>    // you can remove file from staging area
+ git log  // you can see entire history  through log
+ rm -rf <fileName>  // delete the file from repository
+ // whwenever you do git commit, there is hashId(dnnfjfjd585334jfjkdd54363hjgjs73213) is generated for each commit, tha t you can see in log
+ git stash // whwenever you made changes, that changes you dont want to commit as wel as loose, so put changes in backstage
+ git stash pop // to call back all backstage changes on stage
+ git stash clear // if you want to remove/clear those changes which are currently in backstage
+
+ https://github.com/Kadar-Admankar/git-checking   -- this is github url for my repository
+
+ git remote remove origin  // for removing origin 
+ git remote add origin <githubUrl>   // for adding origin repository  remote means you are working with url, add means you are adding new url, origin means what is the name of url that you are going to add
+
+ git remote -v  // it will show all url that attach to the current folder
+
+ git push origin main  // pushing the committed files into repository,  here main is branch name
