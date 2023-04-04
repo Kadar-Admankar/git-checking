@@ -10,7 +10,9 @@ git init  // to initialize empty git repository i.e.  .git file
 touch names.txt   //cmd to create file  for exa- touch kadar.js
 git status   // you can check status of all files and folders like committed files, untracked files, staged 
 git add <fileName>    // you can stage individual file in git repository  // after modification also you can use same cmd to commit file
+git add . // all files go into staging area
 git commit -m '<message>'  // commit cmd after stage
+git push   // it will go into commit area of remote/local repository
 cat <fileName>   // whatever things available in the file you can see through this 
 
  git restore --staged <fileName>    // you can remove file from staging area
@@ -34,3 +36,8 @@ cat <fileName>   // whatever things available in the file you can see through th
 
 
  git remote add upstream <githubUrl>  // upstream is the fork account url
+
+ //for one branch there is one pull request(PR)
+ there is only one PR for one branch
+
+ git reset <hashId>   // if you want to remove committed changes from file - it will remove all committed changes above this hashId
